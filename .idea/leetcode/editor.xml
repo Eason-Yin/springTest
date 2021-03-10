@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[1]两数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[1]两数之和.java" />
+              <option name="questionId" value="1" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[239]滑动窗口最大值.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[239]滑动窗口最大值.java" />
+              <option name="questionId" value="239" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[303]区域和检索 - 数组不可变.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[303]区域和检索 - 数组不可变.java" />
+              <option name="questionId" value="303" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[483]最小好进制.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[483]最小好进制.java" />
+              <option name="questionId" value="483" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

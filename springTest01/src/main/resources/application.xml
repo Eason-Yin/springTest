@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    name:别名   可以取多个   分割可以用逗号，分号，空格
+    -->
+    <bean id="name" class="com.ys.pojo.User" name="n1,n2 n3;n4">
+        <constructor-arg name="name" value="eason"/>
+    </bean>
+
+<!--    <bean  id="name" class="com.ys.pojo.User">-->
+<!--        <constructor-arg index="0" value="eason1"/>-->
+<!--    </bean>-->
+</beans>
