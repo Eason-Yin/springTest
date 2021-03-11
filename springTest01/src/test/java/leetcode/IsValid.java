@@ -11,25 +11,23 @@ import java.util.Map;
  */
 public class IsValid {
     public static boolean isValid(String s){
-        int n = s.length();
-        if (n % 2 == 1) {
+        if(s.length() %2 != 0){
             return false;
         }
-
-        Map<Character, Character> pairs = new HashMap<Character, Character>() {{
-            put(')', '(');
-            put(']', '[');
-            put('}', '{');
+        Map<Character,Character> map = new HashMap<Character, Character>() {{
+            put('}','{');
+            put(')','(');
+            put(']','[');
         }};
         Deque<Character> stack = new LinkedList<Character>();
-        for (int i = 0; i < n; i++) {
+        for(int i = 0;i < s.length();i++){
             char ch = s.charAt(i);
-            if (pairs.containsKey(ch)) {
-                if (stack.isEmpty() || stack.peek() != pairs.get(ch)) {
+            if(map.containsKey(ch)){
+                if(stack.isEmpty() || stack.peek() != map.get(ch)){
                     return false;
                 }
                 stack.pop();
-            } else {
+            }else {
                 stack.push(ch);
             }
         }
