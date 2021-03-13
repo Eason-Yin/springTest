@@ -12,16 +12,14 @@ public class RemoveElement {
             if(nums[q] != val){
                 nums[p] = nums[q];
                 p++;
-            }else {
-                q++;
             }
         }
         return p;
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,1,2,2,3,3,4,5};
-        int re = removeElement(nums,2);
+        int[] nums = {3,2,2,3};
+        int re = removeElement(nums,3);
         for(int i = 0;i < re;i++){
             System.out.print(nums[i]);
         }
