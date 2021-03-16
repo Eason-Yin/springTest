@@ -6,6 +6,8 @@ package leetcode;
  * 示例：
  * 输入: haystack = "hello", needle = "ll"
  * 输出: 2
+ * 输入: haystack = "aaaaaa", needle = "bba"
+ * 输出: -1
  */
 public class StrStr {
     /**
@@ -35,13 +37,34 @@ public class StrStr {
         int h = haystack.length();
         int n = needle.length();
 
+        int ph = 0;
+
+        if(n == 0){
+            return 0;
+        }
+        while (ph < h - n + 1) {
+            while (ph < h - n + 1 && haystack.charAt(ph) != needle.charAt(0)) {
+                ph++;
+            }
+            int pn = 0;
+            int curr_len = 0;
+            while (ph < h && pn < n && haystack.charAt(ph) == needle.charAt(pn)) {
+                ph++;
+                pn++;
+                curr_len++;
+            }
+            if (curr_len == n) {
+                return ph - curr_len;
+            }
+            ph = ph - curr_len + 1;
+        }
         return -1;
     }
 
 
     public static void main(String[] args) {
-        String haystack = "ieetcode";
-        String needle = "co";
+        String haystack = "aaaaaaaa";
+        String needle = "bba";
         System.out.println(strStr(haystack,needle));
     }
 }
